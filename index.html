@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <?php include('info.php');?>
+  <?php include('getState.php');?>
+  <script src="Ajax.js"></script>
+</head>
+  <style>
+
+    div.clever {
+      border: solid;
+      height: 400px;
+      width: 400px;
+      
+    }
+
+    input[type=text]{
+      height: 30px;
+      width: 150px;
+    }
+
+    form[name=try]{
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+    }
+    input[type=submit]{
+      height: 30px;
+      width:100px ;
+      background-color: green;
+      color : white;
+      margin-left: 200px;
+      margin-top: 0px;
+      border-color: white;
+      
+    }
+  </style>
+  
+<body>
+  <div class ="clever">
+    <br>
+    <form action="info.php" method="POST" name="try" id = "landing" onsubmit="" >
+      <label for="name"> Name :</label> <br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="DOB"> Date of birth :</label> <br>
+      <input type="text" name="DOB" id="DOB" required> <br>
+      <label for="address">Address :</label><br>
+      <input type="text" id="address" name="address" value="" required><br>
+      <label for="postcode">Postcode :</label><br>
+      <input onchange = "State()" type="text" name="postcode" id="postcode" class="postcode" required><br>
+      <label for="state"> State :</label><br>
+      <input  type="text" name="state" id="state"  required><br>
+         
+  <input type="submit" value="Submit" name="submit" id = "sub">
+</form>
+
+
+
+    </div>
+    
+    
+
+ 
+</body>
+
+</html>
+
