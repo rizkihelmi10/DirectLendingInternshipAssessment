@@ -1,4 +1,4 @@
-Direct Landing Assessment for Internship
+
 
 This assessment asked me to make a form that receive user's input, insert the input into database, and retrieve some 
 value into the form based on user's input.
